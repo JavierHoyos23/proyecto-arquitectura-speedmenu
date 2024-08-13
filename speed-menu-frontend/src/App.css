@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.panel-container {
+  display: grid;
+  margin: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.grid-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  margin: 0 0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; 
+}
+
+.dish-image {
+  margin: 5px;
+  align-items: center;
+  border-radius: 8px; 
+}
+
+.dish-price {
+  margin-top: 5px;
+  text-align: left;
+  color: rgb(76, 175, 80); 
+}
+
+.dish-description {
+  margin-left: 6px;
+  text-align: justify;
+  color: rgb(55 65 81);
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.item-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item-price {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(76, 175, 80); 
+}
+
+.item-quantity {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #b03a2e;
+  border: 2px solid #a93226;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: #a93226;
+  border-color: #922b21;
+}
+
+.order-summary {
+  text-align: end;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.confirm-button {
+  background-color: #28a745;
+  border-color: #218838; 
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+
